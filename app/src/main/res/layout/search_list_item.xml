@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/card_margin_horizontal"
+    android:layout_marginTop="@dimen/card_margin_vertical"
+    android:layout_marginEnd="@dimen/card_margin_horizontal"
+    android:layout_marginBottom="@dimen/card_margin_vertical"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    card_view:cardCornerRadius="@dimen/card_recycler_corner_radius"
+    card_view:cardElevation="@dimen/card_recycler_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/text_margin">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/img_height"
+            android:layout_marginEnd="@dimen/text_margin" />
+
+            <TextView
+                android:id="@+id/rover_name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/primary_text"
+                android:text="@string/rover_name"
+                android:layout_below="@id/image"/>
+
+        <TextView
+            android:id="@+id/rover_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/secondary_text"
+            android:text="@string/rover_name"
+            android:layout_toRightOf="@id/rover_name_txt"
+            android:layout_below="@id/image"/>
+
+        <TextView
+            android:id="@+id/rover_launch_date_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/primary_text"
+            android:text="@string/rover_launch_date"
+            android:layout_below="@id/rover_name_txt"/>
+
+        <TextView
+            android:id="@+id/rover_launch_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/secondary_text"
+            android:text="@string/rover_launch_date"
+            android:layout_toRightOf="@id/rover_launch_date_txt"
+            android:layout_below="@id/rover_name"/>
+
+        <TextView
+            android:id="@+id/rover_landing_date_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/primary_text"
+            android:text="@string/rover_landing_date"
+            android:layout_below="@id/rover_launch_date_txt"/>
+
+        <TextView
+            android:id="@+id/rover_landing_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/secondary_text"
+            android:text="@string/rover_name"
+            android:layout_toRightOf="@id/rover_landing_date_txt"
+            android:layout_below="@id/rover_launch_date"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
